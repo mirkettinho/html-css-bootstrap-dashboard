@@ -1,0 +1,48 @@
+/* DEBUG */
+[class^="col"]{
+  background-color: red;
+  border: 1px solid black;
+}
+
+/* GENERAL */
+
+
+
+
+
+
+
+/* HEADER */
+header{
+  width: 100%;
+}
+.ps-col{
+  height: 40px;
+}
+
+
+
+
+
+
+/* MAIN */
+
+main{
+  height: calc(100vh - 40px) !important;
+}
+
+
+
+#vertical-navigation-bar{
+  height: calc(100vh - 40px);
+  background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
