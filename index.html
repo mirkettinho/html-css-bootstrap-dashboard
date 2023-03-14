@@ -14,23 +14,25 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Document</title>
+  <title>Dashboard</title>
 
 </head>
 
 <body>
-  <header class="">
-    <div class="row bg-info">
 
-      <div class="col col-sm-2  col-lg-2 ps-col">
+  <!-- HEADER -->
+  <header class="position-fixed">
+    <div class="row  h-100">
+
+      <div class="col col-sm-2  col-lg-2">
         LOGO
       </div>
 
-      <div class="col col-sm-9 col-lg-8 ps-col">
+      <div class="col col-sm-9 col-lg-8">
         BARRA SEARCH
       </div>
         
-      <div class="col col-sm-1 col-lg-2 ps-col">
+      <div class="col col-sm-1 col-lg-2">
         BELL
       </div>
 
@@ -38,12 +40,13 @@
 
   </header>
 
-
+  <!-- MAIN -->
   <main>
+    <div class="d-flex">
+    <!-- VERTICAL NAV -->
     <section id="vertical-navigation-bar" class="">
-      <div class="row h-100">
-        
-        <div class="col col-sm-2 d-flex flex-column justify-content-between">
+      <div class="row h-100 ">
+        <div class="col d-flex flex-column justify-content-between">
 
           <div class="ps-top-bar">
             home
@@ -59,7 +62,28 @@
 
       </div>
     </section>
+    </div>
+    <!-- INFO DASHBOARD -->
+    <section id="info-dashboard" class="">
+      <div class="row h-100  flex-column ">
 
+        <div class="col">
+          nuovo studente
+        </div>
+
+        <div class="col">
+          boolean
+        </div>
+
+        <div class="col">
+          studenti online
+        </div>
+      </div>
+    </section>
+
+    
+
+    
   </main>
 </body>
 </html>
