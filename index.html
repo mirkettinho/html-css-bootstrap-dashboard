@@ -21,66 +21,105 @@
 <body>
 
   <!-- HEADER -->
-  <header class="position-fixed">
-    <div class="row  h-100">
+  <header class="p-3">
+    <nav class="container-fluid">
+      <div class="row align-items-center">
 
-      <div class="col col-sm-2  col-lg-2">
-        LOGO
+        <!-- LOGO -->
+        <div class="d-none d-lg-block ps-2 col-auto me-1">
+          <a href="#">
+            <img class="logo" src="img/logo.svg" alt="logo boolean">
+          </a>
+        </div>
+
+        <!-- LOGO SMALL -->
+        <div class="d-block d-lg-none ps-1 col-auto">
+          <a href="#">
+            <img class="logo-small" src="img/mobile-logo.png" alt="logo boolean small">
+          </a>
+        </div>
+
+        <!-- SEARCH BAR -->
+        <div class="col">
+          <div class="search-group">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input id="search-bar" type="search" class="form-control border-0 shadow-none my_bg-gray" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="basic-addon1">
+          </div>
+        </div>
+
+
+        <div class="col-auto col-lg-1 d-flex justify-content-end justify-content-lg-between gx-1">
+          <a class="nav-link d-none d-lg-block" href="#">
+            <i class="fa-solid fa-list"></i>
+          </a>
+          <a class="nav-link d-none d-lg-block" href="#"> 
+            <i class="fa-solid fa-circle-question"></i>
+          </a>
+          <a class="nav-link d-none d-lg-block" href="#">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </a>
+
+
+        <!-- DROPDOWN -->
+          <div class="dropdown">
+            <a class="nav-link justify-content-end" href="#" data-bs-toggle="dropdown">
+              <i class="fa-solid fa-bell"></i>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Profilo</a></li>
+              <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+              
+            </ul>
+          </div>
+        </div>
+
       </div>
-
-      <div class="col col-sm-9 col-lg-8">
-        BARRA SEARCH
-      </div>
-        
-      <div class="col col-sm-1 col-lg-2">
-        BELL
-      </div>
-
-    </div>
-
+    </nav>
   </header>
 
   <!-- MAIN -->
-  <main>
-    <div class="d-flex">
-    <!-- VERTICAL NAV -->
-    <section id="vertical-navigation-bar" class="">
-      <div class="row h-100 ">
-        <div class="col d-flex flex-column justify-content-between">
+  <main class="d-flex">
 
-          <div class="ps-top-bar">
-            home
-            stats
-            signal
-          </div>
+    <!-- NAVBAR LEFT -->
+    <div class="ps-navbar text-white">
 
-          <div class="ps-bottom-bar">
-            admin
-          </div>
+      <!-- NAVBAR LEFT TOP -->
+      <div class="h-100 d-flex flex-column justify-content-between p-4">
+        <div class="link">
+          <a class="nav-link p-1 mb-2 d-flex align-items-center" href="#">
+            <i class="fa-solid fa-house me-2"></i> <span class="d-none d-lg-block">Home</span>
+          </a>
+          <a class="nav-link p-1 mb-2 d-flex align-items-center" href="#">
+            <i class="fa-solid fa-chart-simple me-2"></i></i> <span class="d-none d-lg-block">Stats</span>
+          </a>
+          <a class="nav-link p-1 mb-2 d-flex align-items-center" href="#">
+            <i class="fa-solid fa-signal me-2"></i> <span class="d-none d-lg-block">Signals</span>
+          </a>
+        </div>
 
+        <!-- NAVBAR LEFT BOTTOM -->
+        <div>
+          <a class="nav-link p-1 d-flex align-items-center" href="#">
+            <i class="fa-solid fa-gear me-2"></i> <span class="d-none d-lg-block">Admin</span>
+          </a>
         </div>
 
       </div>
-    </section>
     </div>
-    <!-- INFO DASHBOARD -->
-    <section id="info-dashboard" class="">
-      <div class="row h-100  flex-column ">
+    
 
-        <div class="col">
-          nuovo studente
-        </div>
+    <!-- CONTENT -->
+    <section id="content">
 
-        <div class="col">
-          boolean
-        </div>
-
-        <div class="col">
-          studenti online
+      <!-- CONTENT TOP -->
+      <div id="content-top">
+        <div class="container-fluid">
+          <div class="row"></div>
         </div>
       </div>
     </section>
-
     
 
     
