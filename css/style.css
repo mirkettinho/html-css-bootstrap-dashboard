@@ -50,6 +50,22 @@ main{
   background-color: #071f35;
 }
 
+.ps-navbar a:hover{
+  background-color: #838e9a;
+  cursor: pointer;
+}
+
+.btn-outline-secondary.md-btn{
+  background-color: white;
+  border-color: #acb1b6;
+  border-radius: 5px;
+}
+
+.btn-outline-secondary.md-btn:hover{
+  border-color: #acb1b6;
+  border-radius: 5px;
+  color: #6b747c;
+}
 /* CONTENT */
 #content{
   display: inline-block;
