@@ -24,6 +24,10 @@ header .logo-small{
 }
 
 #search-bar{
+  background-color: transparent;
+}
+
+.search-group:hover{
   background-color: #e5e5e5;
 }
 
@@ -40,4 +44,43 @@ main{
   height: 100%;
   background-image: url(../img/sidebar-bg.png);
   background-color: #071f35;
+}
+
+/* CONTENT */
+#content{
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+}
+
+table img{
+  width: 30px;
+}
+table tr .big-cells{
+  width: 170px;
+}
+
+table tr .bigg-cells{
+  width: 150px;
+}
+
+table tr .small-cells{
+  width: 80px;
+}
+
+table tr .mid-cells{
+  width: 140px;
+}
+
+
+.ps-badge{
+  background-color: #178653;
+}
+
+.ps-badge.warning{
+  background-color: #ffca2b;
+}
+
+.ps-badge.danger{
+  background-color: #dc3545;
 }

@@ -40,15 +40,15 @@
         </div>
 
         <!-- SEARCH BAR -->
-        <div class="col">
-          <div class="search-group">
+        <div class="col p-0">
+          <div class="search-group d-flex px-2 align-items-center">
             <span><i class="fa-solid fa-magnifying-glass"></i></span>
             <input id="search-bar" type="search" class="form-control border-0 shadow-none my_bg-gray" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="basic-addon1">
           </div>
         </div>
 
 
-        <div class="col-auto col-lg-1 d-flex justify-content-end justify-content-lg-between gx-1">
+        <div class="col-auto  d-flex justify-content-end justify-content-lg-between gx-1">
           <a class="nav-link d-none d-lg-block" href="#">
             <i class="fa-solid fa-list"></i>
           </a>
@@ -114,11 +114,286 @@
     <section id="content">
 
       <!-- CONTENT TOP -->
-      <div id="content-top">
+      <div id="content-top" class="bg-primary text-white py-3">
         <div class="container-fluid">
-          <div class="row"></div>
+          <div class="row">
+
+            <div class="col-sm-4 col-lg-6 mb-2">
+              <h3>Boolean</h3>
+              <span class="badge rounded-pill bg-secondary">Piano blaze</span>
+
+              <div>
+                <span class="badge rounded-pill bg-secondary">3 app</span>
+                <i class="fa-solid fa-chevrons-right"></i>
+                <span class="badge rounded-pill bg-secondary d-none d-lg-inline-block">Boolean mobile app</span>
+                <span class="badge rounded-pill bg-secondary d-none d-lg-inline-block">Boolean web app</span>
+                <span class="badge rounded-pill bg-secondary d-none d-lg-inline-block">Boolean blog app</span>
+                <span class="badge rounded-pill bg-secondary d-inline-block d-lg-none">+</span>
+              </div>
+            </div>
+
+            <div class="col-sm-5 col-lg-auto">
+              <p>Studenti online negli ultimi 30 minuti</p>
+              <h3 class="mb-0">125</h3>
+            </div>
+
+            <div class="col-sm-3 col-lg text-sm-end order-first order-sm-last mb-2">
+              <span class="pe-2 d-inline-block">Nuovo studente</span>
+              <button id="offcanvas-btn" class="btn btn-primary border-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasright" aria-controls="offcanvasright">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+
+
+
+          </div>
         </div>
       </div>
+
+
+      <section id="content-bottom">
+        <div class="container-fluid">
+          <div class="row my-4">
+            <div class="col-12 col-lg-8">
+              <div class="row g-4">
+                <div class="col-12">
+                  <!-- CARD -->
+                  <div class="card">
+                    <!-- CARD HEADER -->
+                    <div class="card-header">
+                      <h3 class="card-title">Prossime Classi</h3>
+                    </div>
+                    <!-- CARD BODY -->
+                    <div class="card-body">
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="big-cells">Nome</th>
+                            <th scope="col" class="mid-cells text-center d-none d-md-table-cell">Data inizio</th>
+                            <th scope="col" class="small-cells text-center d-none d-sm-table-cell">Roi</th>
+                            <th scope="col" class="small-cells text-center">Stato</th>
+                            <th scope="col" class="bigg-cells text-center">Azioni</th>
+                          </tr>
+                        </thead>
+
+                        <!-- ROW 1 -->
+                        <tbody>
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 75</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>15 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <!-- ROW 2 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 76</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>16 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <!-- ROW 3 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 77</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>17 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge warning">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+                          <!-- ROW 4 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 78</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>18 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+
+                          <!-- ROW 5 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 79</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>19 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge danger">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+
+                          <!-- ROW 6 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 80</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>20 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+
+                          <!-- ROW 7 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 81</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>21 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge danger">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+
+                          <!-- ROW 8 -->
+                          <tr>
+                            <td scope="row">
+                              <img class="me-1" src="img/class-avatar.jpg" alt="foto avatar">
+                              <span>Classe 82</span>
+                            </td>
+                            <td class="text-center d-none d-md-table-cell"> 
+                              <span>22 Feb 2021</span>
+                            </td>
+                            <td class="text-center d-none d-sm-table-cell"> 
+                              <span>20%</span>
+                            </td>
+                            <td class="text-center"> 
+                              <span class="badge text-bg-success ps-badge">Done</span>
+                            </td>
+                            <td class="text-center"> 
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-pencil"></i>
+                              </button>
+                              <button type="button" class="btn-outline-secondary">
+                                <i class="fa-solid fa-trash"></i>
+                              </button>
+                            </td>
+                          </tr>
+
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </section>
     
 
