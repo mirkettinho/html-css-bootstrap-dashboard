@@ -1,7 +1,7 @@
 /* DEBUG */
-[class^="col"]{
+/* [class^="col"]{
   border: 1px solid black;
-}
+} */
 
 
 /* GENERAL */
@@ -27,10 +27,14 @@ header .logo-small{
   background-color: transparent;
 }
 
-.search-group:hover{
+.search-group{
   background-color: #e5e5e5;
+  border-radius: 10px;
 }
 
+.md-color{
+  color: #ff8f00;
+}
 /* MAIN */
 main{
   height: calc(100vh - 80px);
@@ -53,6 +57,9 @@ main{
   width: 100%;
 }
 
+.md-badge{
+  background-color: #165bba;
+}
 table img{
   width: 30px;
 }
